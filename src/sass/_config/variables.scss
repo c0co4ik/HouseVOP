@@ -1,0 +1,31 @@
+// Ограничение макета
+$wrapper-max: 1920px !default;
+$wrapper-min: 280px !default;
+
+
+// Контейнер
+$container-max-widths: 1140px;
+$container-padding: 15px;
+
+
+// Контрольные точки
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+
+// Шрифт
+$font-family-base: 'Raleway';
+$font-weight-base: 400;
+$font-style-base: normal;
+
+
+// Цвета
+$color-accent: #D4C17F;
+$color-dark: #242B33;
+$color-white: #FFF;

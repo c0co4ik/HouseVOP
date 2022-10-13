@@ -1,0 +1,27 @@
+@import "../_mixins/font-face";
+
+// Подключение шрифтов
+@include font-face("Playfair_Display", "../font/Playfair_Display/static/PlayfairDisplay-Bold", 700);
+@include font-face("Raleway", "../font/Raleway/static/Raleway-Regular", 400);
+@include font-face("Roboto", "../font/Roboto/static/Roboto-Light", 400);
+
+
+// Миксины для шрифтов
+
+@mixin font-playfair-bold {
+  font-family: 'Playfair_Display';
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin font-roboto-light {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin font-raleway-regular {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-style: normal;
+}
