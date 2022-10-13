@@ -19,9 +19,9 @@
 
 html, body {
   @include reset-model;
-  @include font-roboto-regular;
-  color: $color-text-gray;
-
+  @include font-raleway-regular;
+  color: $color-white;
+  background-color: $color-dark;
 }
 
 

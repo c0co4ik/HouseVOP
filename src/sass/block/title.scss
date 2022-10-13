@@ -1,0 +1,8 @@
+.title{
+  @include font-playfair-bold;
+  color: $color-accent;
+
+  &_header{
+    @include font(48px, 64px);
+  }
+}

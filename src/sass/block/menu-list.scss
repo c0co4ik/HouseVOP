@@ -1,0 +1,24 @@
+.menu-list{
+  @include reset-list;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__item + &__item{
+    margin-left: 40px;
+  }
+
+  &__link{
+    @include reset-link;
+    @include font-raleway-regular;
+    @include font(14px, 16px);
+    color: $color-white;
+    letter-spacing: 0.05em;
+    transition: all .09s ease-in-out;
+
+    &:hover{
+      text-decoration: underline;
+      opacity: 0.6;
+    }
+  }
+}

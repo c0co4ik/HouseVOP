@@ -1,0 +1,87 @@
+.header{
+  position: relative;
+  min-height: 840px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &::before{
+    content: "" ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%);
+  }
+
+  &__inner{
+    position: relative;
+  }
+
+  &__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    margin-bottom: 195px;
+  }
+
+  &__content{
+    max-width: 582px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  }
+
+  &__title{
+    @include reset-model;
+  }
+
+  &__content-mouse-effect{
+    position: absolute;
+    top: 210px;
+    left: 50%;
+    transform: translateY(-50%)
+  }
+
+  &__mouse-effect-mouse{
+    animation: downUp 0.9s cubic-bezier(0.1,0.25,0.1,1) 0s infinite alternate both;
+  }
+
+  &__contacts-item{
+    @include reset-link;
+    @include font-raleway-regular;
+    @include font(18px, 21px);
+    display: flex;
+    align-items: center;
+    transition: all .09s ease-in;
+
+
+    &:hover{
+      color: $color-accent;
+    }
+  }
+
+  &__contacts{
+    margin-top: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span{
+      margin-left: 15px;
+    }
+  }
+
+}
+
+@keyframes downUp {
+  from {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: translateY(5px);
+  }
+}
