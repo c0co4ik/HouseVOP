@@ -1,0 +1,18 @@
+.section__number{
+  @include reset-model;
+  @include font-playfair-bold;
+  @include font(400px, 533px);
+  position: absolute;
+  top: -60px;
+  color: $color-white;
+  opacity: 0.02;
+
+  &_right{
+    right: -55%;
+    transform: translateX(-50%);
+  }
+
+  &_left{
+    transform: translateX(-50%);
+  }
+}

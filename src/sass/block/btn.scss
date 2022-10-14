@@ -1,0 +1,15 @@
+.btn{
+  @include reset-button;
+  @include font-raleway-bold;
+  @include font(16px, 27px);
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  background-color: $color-accent;
+  color: $color-white;
+  transition: all .9 ease-in;
+
+  &:hover{
+    background-color: darken($color: $color-accent, $amount: 10);
+  }
+}

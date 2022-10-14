@@ -5,4 +5,8 @@
   &_header{
     @include font(48px, 64px);
   }
+
+  &_section{
+    @include font(36px, 48px);
+  }
 }

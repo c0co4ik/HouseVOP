@@ -27,11 +27,22 @@
     margin-bottom: 195px;
   }
 
+  &__logo{
+    transition: all .3s ease-in-out;
+  }
+
+  &__logo svg:hover{
+    path{
+      fill: $color-accent;
+    }
+  }
+
   &__content{
     max-width: 582px;
     margin: 0 auto;
     text-align: center;
     position: relative;
+    padding-bottom: 74px;
   }
 
   &__title{

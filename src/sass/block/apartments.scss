@@ -1,0 +1,8 @@
+.apartments{
+  position: relative;
+
+  &__title{
+    @include reset-model;
+    margin-bottom: 100px;
+  }
+}
