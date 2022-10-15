@@ -8,11 +8,22 @@
   opacity: 0.02;
 
   &_right{
-    right: -55%;
+    right: -53%;
     transform: translateX(-50%);
   }
 
   &_left{
     transform: translateX(-50%);
   }
+
+  &_map{
+    top: 0;
+  }
+
+  &_middle{
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
 }

@@ -20,6 +20,6 @@
   &__descr{
     @include reset-model;
     @include font-roboto-light;
-    @include font(20px, 27px);
+    @include font(18px, 27px);
   }
 }

@@ -1,0 +1,9 @@
+.footer-sublist{
+  @include reset-list;
+  display: flex;
+  gap: 20px;
+
+  &__item:hover{
+    transform: scale(1.1);
+  }
+}

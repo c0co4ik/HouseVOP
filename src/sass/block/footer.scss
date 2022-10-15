@@ -1,0 +1,14 @@
+.footer{
+  padding: 72px 10px 60px;
+  background-color: #2D343C;
+
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__sublist{
+    margin-top: 20px;
+  }
+
+}

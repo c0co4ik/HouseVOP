@@ -1,0 +1,28 @@
+.footer-list{
+  @include reset-list;
+
+  &__item{
+    span{
+      color: $color-accent;
+    }
+  }
+
+  &__item + &__item{
+    margin-top: 15px;
+  }
+
+  &__link{
+    @include reset-link;
+    @include font-raleway-regular;
+    @include font(14px, 16px);
+    color: $color-white;
+    padding: 3px;
+    letter-spacing: 0.05em;
+    transition: all .09s ease-in-out;
+    
+    &:hover{
+      text-decoration: underline;
+      opacity: 0.6;
+    }
+  }
+}
