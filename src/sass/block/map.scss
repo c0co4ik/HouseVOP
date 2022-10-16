@@ -2,8 +2,16 @@
   margin-bottom: 180px;
   position: relative;
 
+  @include bp(lg){
+    margin-bottom: 100px;
+  }
+
   &__title{
     margin-bottom: 100px;
+
+    @include bp(lg){
+      text-align: center;
+    }
   }
 
   &__region{

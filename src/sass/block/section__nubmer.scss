@@ -6,6 +6,10 @@
   top: -60px;
   color: $color-white;
   opacity: 0.02;
+  
+  @include media(1500px){
+    display: none;
+  }
 
   &_right{
     right: -53%;

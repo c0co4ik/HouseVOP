@@ -6,20 +6,37 @@
   text-align: center;
   position: relative;
 
+  @include bp(lg){
+    padding: 60px 0 120px;
+  }
+
   &__list{
     @include reset-list;
     display: flex;
     align-items: center;
     gap: 70px;
+
+    @include bp(lg){
+      flex-direction: column;
+      gap: 50px;
+    }
   }
 
   &__img{
     margin-bottom: 53px;
+
+    @include bp(lg){
+      margin-bottom: 30px;
+    }
   }
 
   &__descr{
     @include reset-model;
     @include font-roboto-light;
     @include font(18px, 27px);
+
+    @include bp(lg){
+       @include font(20px, 23px);
+    }
   }
 }

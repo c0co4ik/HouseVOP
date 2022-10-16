@@ -1,7 +1,15 @@
 .faq{
   margin-bottom: 180px;
 
+  @include bp(lg){
+    margin-bottom: 100px;
+  }
+
   &__title{
     margin-bottom: 50px;
+
+    @include bp(lg){
+    text-align: center;
+  }
   }
 }

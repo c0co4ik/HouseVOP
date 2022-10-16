@@ -4,5 +4,9 @@
   &__title{
     @include reset-model;
     margin-bottom: 100px;
+    
+    @include bp(xl){
+      text-align: center;
+    }
   }
 }

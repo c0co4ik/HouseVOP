@@ -22,13 +22,15 @@
   &__top{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
     padding: 30px 0;
     margin-bottom: 195px;
   }
 
   &__logo{
+    position: relative;
     transition: all .3s ease-in-out;
+    z-index: 1000;
   }
 
   &__logo svg:hover{

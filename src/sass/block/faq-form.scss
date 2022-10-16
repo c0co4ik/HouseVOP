@@ -5,8 +5,13 @@
   align-items: center;
   width: 100%;
 
+  @include bp(lg){
+    flex-direction: column;
+  }
+
   &__item{
     width: calc(25% - 15px);
+    order: -1;
     span{
         @include reset-model;
         @include font-raleway-regular;
@@ -14,6 +19,18 @@
         display: block;
         color: #E7E7E7;
         text-align: center;
+    }
+
+    @include bp(lg){
+      width: 50%;
+      margin-bottom: 15px;
+    }
+
+    &_last{
+
+      @include bp(lg){
+        order: 1;
+      }
     }
   }
 

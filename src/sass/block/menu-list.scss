@@ -4,8 +4,29 @@
   align-items: center;
   justify-content: space-between;
 
+  @include bp(lg){
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__item{
+    @include bp(lg){
+      margin-bottom: 20px;
+    }
+  }
+
+  &__item:last-child{
+    @include bp(lg){
+      margin-bottom: 0;
+    }
+  }
+
   &__item + &__item{
     margin-left: 40px;
+
+    @include bp(lg){
+      margin-left: 0;
+    }
   }
 
   &__link{
@@ -15,6 +36,11 @@
     color: $color-white;
     letter-spacing: 0.05em;
     transition: all .09s ease-in-out;
+
+    @include bp(lg){
+      @include font(20px, 23px);
+    }
+
 
     &:hover{
       text-decoration: underline;

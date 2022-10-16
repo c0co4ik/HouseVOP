@@ -1,6 +1,10 @@
 .video{
   margin-bottom: 180px;
   position: relative;
+  
+  @include bp(lg){
+    margin-bottom: 100px;
+  }
 
   &__link{
     @include reset-link;
@@ -26,6 +30,7 @@
     max-width: 720px;
     margin: 0 auto;
     transition: all .4s ease-out;
+    width: 50%;
     
     &::before{
       content: "";
