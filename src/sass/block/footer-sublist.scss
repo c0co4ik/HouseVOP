@@ -3,6 +3,10 @@
   display: flex;
   gap: 20px;
 
+  @include bp(lg){
+    justify-content: center;
+  }
+
   &__item:hover{
     transform: scale(1.1);
   }

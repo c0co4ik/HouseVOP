@@ -5,9 +5,26 @@
   align-items: flex-end;
   width: 100%;
 
+  @include bp(sm){
+    flex-direction: column;
+  }
+
   &__item{
     width: calc(50% - 15px);
     margin-bottom: 35px;
+    order: 1;
+
+    &_last{
+      @include bp(sm){
+        order: 2;
+      }
+      
+    }
+
+    @include bp(sm){
+      width: 100%;
+      margin-bottom: 20px;
+    }
 
     span{
         @include reset-model;
@@ -16,6 +33,11 @@
         display: block;
         color: #E7E7E7;
         text-align: center;
+
+        @include bp(sm){
+          max-width: 255px;
+          margin: 0 auto;
+        }
         
     }
   }

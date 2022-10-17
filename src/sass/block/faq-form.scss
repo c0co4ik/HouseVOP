@@ -26,6 +26,10 @@
       margin-bottom: 15px;
     }
 
+    @include bp(sm){
+      width: 100%;
+    }
+
     &_last{
 
       @include bp(lg){
